@@ -12,8 +12,11 @@ func main() {
 	// Interface names: one-method interfaces are named by the method name
 	// plus an -er suffix or similar modification to construct an agent noun.
 	
-	// The convention in Go is to use MixedCaps or mixedCaps rather than
-	// underscores to write multiword names.
+	// Idiomatic conventions:
+	// CamelCase for exported functions and method names, camelCase for internal.
+	// Acronyms should be all-caps (ParseHTTP, parseURL).
+	// lowercase for local variables and package names, camelCase for exported.
+	// CamelCase for constants and structs.
 	
 	const MAXRETRIES = 5
 
